@@ -1,7 +1,7 @@
 // This file is part of the Express Project for hashing password.
 
 // import bcrypt for hashing password
-import {genSalt, hash, compare} from 'bcrypt'
+import {genSalt, hash, compare} from 'bcrypt';
 
 export async function BcrypthashPassword(NormalPassword){
     let Salt = await genSalt(5) //  generating salt for hashing password
